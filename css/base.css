@@ -46,6 +46,14 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    border: 0;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+button:focus {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -59,6 +67,16 @@ h1 {
     text-transform: uppercase;
 }
 
+h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+    color: #1178B2;
+    padding-top: 100px;
+}
+
 
 
 
@@ -68,7 +86,9 @@ h1 {
 }
 
 
-.background_intro {
+/*#region --------------Первый блок Header------------------*/
+
+.intro {
     width: 100%;
     height: 900px;
     background: linear-gradient(rgba(0, 0, 0, 0.59),rgba(0, 0, 0, 0.59)),
@@ -100,17 +120,15 @@ h1 {
     line-height: 80px;
 }
 
+
 .header-button_login {
     border-radius: 10px;
     width: 150px;
     height: 56px;
     background-color: #07AF91;
-    color: #ffffff;
     font-weight: 500;
     font-size: 18px;
     line-height: 80px;
-    border: 0px;
-    cursor: pointer;
 }
 
 
@@ -155,5 +173,497 @@ h1 {
     font-weight: 600;
     font-size: 20px;
     line-height: 80px;
+}
+
+/*#endregion --------------End Первый блок Header------------------*/
+
+
+/*#region ------------- Блок Наши услуги--------------------*/
+
+.info-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.info-block h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1178B2;
+}
+
+.info-block p {
+    max-width: 605px;
+    padding: 24.5px 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.info-block button {
+    width: 326px;
+    height: 70px;
+    background: #07AF91;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 80px;
+    
+}
+
+
+.cards-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    width: 392px;
+    height: 348px;
+}
+
+.card-item__number {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 20px;
+    color: rgba(17, 120, 178, 0.5);
+    padding: 30px 0 65px;
+}
+
+.card-item__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+}
+
+.card-item__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    color: #000000;
+    text-align: center;
+    padding: 15px 25px;
+}
+
+/*#endregion -------------End Блок Наши услуги--------------------*/
+
+/*#region ------------- Блок Научитесь исследовать.. -------*/
+.middle-background {
+    margin-top: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.59),rgba(0, 0, 0, 0.59)),
+                url('../img/startup\ 3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 604px;
+}
+
+.middle-background__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 1393px;
+    margin: 0px auto;
+}
+
+.middle-background__wrapper h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.middle-background__wrapper p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 60px;
+    text-align: center;
+    padding: 10px 0 20px;
+}
+
+
+.middle-background__wrapper button {
+    width: 341px;
+    height: 80px;
+    background: linear-gradient(276.41deg, #016CA8 -7%, #61B5E4 77.16%);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 80px;
+}
+
+/*#endregion ------------- End Блок Научитесь исследовать.. -------*/
+
+/*#region ------------- Блок С какими рынками ---------------*/
+
+.tabs-block {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    background: #EEF1F4;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 60px;
+    margin: 60px 0;
+}
+
+.tabs-block :last-child {
+    border-right: none;
+}
+
+.tab-item {
+    height: 100%;
+    width: 100%;
+    background: none;
+    color: #484848;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 60px;
+    border-right: 1px solid #CFDDEB;
+
+}
+
+.tab-item.active {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    background: #88BBD8;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 60px;
+    color: #ffffff;
+    
+}
+
+.tab-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: url('../img/Vector.svg') no-repeat;
+}
+
+.tab-card-textinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 300px;
+
+}
+
+.tab-card-textinfo h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    text-transform: uppercase;
+    color: #07AF91;
+}
+
+.tab-card-textinfo h3:first-child {
+    font-weight: 600;
+    color: #000000;
+}
+
+.tab-card-textinfo > p {
+    padding: 29px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.tab-card-textinfo > button {
+    width: 252px;
+    height: 70px;
+    background: linear-gradient(276.41deg, #016CA8 -7%, #61B5E4 77.16%);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 80px;
+}
+
+
+.person-block {
+    padding-top: 45px;
+    display: flex;
+    flex-direction: row;
+}
+
+.person-avatar {
+    height: 62px;
+    width: 62px;
+}
+
+.person-info {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.person-name {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+}
+
+.person-about {
+    font-weight: 400;
+    font-size: 14px;
+    color: #727272;
+}
+
+
+
+.tab-card-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 650px;
+    
+}
+
+
+.tab-card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 20px;
+    height: 200px;
+    width: 289px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+}
+
+.tab-card-item > h1 {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 20px;
+    color: rgba(17, 120, 178, 0.5);
+    text-transform: none;
+}
+
+.tab-card-item > p {
+    padding-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(16, 16, 16, 0.5);
+}
+
+.tab-card-item.download {
+    background: #1178B2;
     cursor: pointer;
 }
+
+.tab-card-item.download > p {
+    max-width: 167px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+
+
+
+
+/*#endregion ------------- End Блок С какими рынками ---------------*/
+
+/*#region ------------- Блок Об акселераторе IT ---------------*/
+
+.acc-block__text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.acc-cards-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.acc-card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 284px;
+    width: 392px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+}
+
+.acc-card-item img {
+    max-width: 105px;
+    max-height: 95px;
+}
+
+.acc-card-item p {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #232323;
+    padding: 30px;
+}
+
+
+.acc-video-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 675px;
+    background: #0F0F0F;
+    border-radius: 10px;
+}
+
+.acc-video-block p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.acc-video-block a {
+    padding: 37px;
+}
+
+/*#endregion ------------- End Блок Об акселераторе IT ---------------*/
+
+/*#region ------------- Блок Программа акселератора ---------------*/
+
+.dropdown-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+}
+
+.dropdown-module {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 31px;
+    height: 80px;    
+}
+
+.module-name-block {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.module-title {
+    padding-left: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 60px;
+    color: #2A79C2;
+}
+
+.module-name {
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.module-expand-btn {
+    display: flex;
+    background: #2A79C2;
+    border-radius: 50%;
+    height: 39px;
+    width: 39px;
+    cursor: pointer;
+}
+.module-expand-btn__pic {
+    margin: auto;
+    transform: rotate(-180deg);
+}
+
+.module-expand-btn__pic.expanded {
+    
+    transform: rotate(0deg);
+
+}
+
+.dropdown-submenu-block {
+    display: none;
+}
+.dropdown-submenu-block.visible {
+    display: block;
+    opacity: 0;
+    animation: ani 2.5s forwards;
+  }
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+
+.submenu-item > a {
+    padding-left: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 60px;
+    color: #555555;
+}
+
+.submenu-item > a:hover {
+    color: #2A79C2;
+}
+
+.submenu-item {
+    height: 70px;
+    border-top: 1px solid #E9E9E9;
+}
+
+
+
+
+
+/*#endregion ------------- End Блок Программа акселератора ---------------*/
+
+
